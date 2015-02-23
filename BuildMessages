@@ -1,0 +1,32 @@
+make -f nbproject/Makefile-default.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory `C:/Users/stuber/Documents/MPLABX/Parkinson.X'
+make  -f nbproject/Makefile-default.mk dist/default/debug/Parkinson.X.debug.cof
+make[2]: Entering directory `C:/Users/stuber/Documents/MPLABX/Parkinson.X'
+"C:\Program Files\Microchip\mplabc18\v3.44\bin\mcc18.exe"  -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p18F24K22   -I "C:\Program Files\Microchip\mplabc18\v3.44\bin"\\..\\h  -fo build/default/debug/uC_main.o   uC_main.c 
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:470:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:470:Warning [2066] type qualifier mismatch in assignment
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:471:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:500:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:500:Warning [2066] type qualifier mismatch in assignment
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:501:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:518:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:518:Warning [2066] type qualifier mismatch in assignment
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:519:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:533:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:533:Warning [2066] type qualifier mismatch in assignment
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:534:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:1073:Warning [2054] suspicious pointer conversion
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:1073:Warning [2066] type qualifier mismatch in assignment
+C:\Users\stuber\Documents\MPLABX\Parkinson.X\uC_main.c:1074:Warning [2054] suspicious pointer conversion
+"C:\Program Files\Microchip\mplabc18\v3.44\bin\mplink.exe"    -p18f24k22  -w -x -u_DEBUG   -z__MPLAB_BUILD=1  -u_CRUNTIME -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1  -l "C:\Program Files\Microchip\mplabc18\v3.44\bin"\\..\\lib  -o dist/default/debug/Parkinson.X.debug.cof  build/default/debug/uC_main.o   
+MPLINK 4.45, Linker
+Device Database Version 1.10
+Copyright (c) 1998-2011 Microchip Technology Inc.
+Errors    : 0
+
+make[2]: Leaving directory `C:/Users/stuber/Documents/MPLABX/Parkinson.X'
+make[1]: Leaving directory `C:/Users/stuber/Documents/MPLABX/Parkinson.X'
+
+BUILD SUCCESSFUL (total time: 8s)
+Loading code from C:/Users/stuber/Documents/MPLABX/Parkinson.X/dist/default/debug/Parkinson.X.debug.cof...
+Loading completed
