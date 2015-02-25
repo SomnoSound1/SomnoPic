@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Somno_Sound_MPLAB_HSUPROT.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=Somno_Sound_MPLAB_HSUPROT.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=somnosoundmplabhsuprot/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/SomnoPic.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=SomnoPic.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=somnopic/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/somnosoundmplabhsuprot/bin
+makeDirectory ${TMPDIR}/somnopic/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/somnosoundmplabhsuprot.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/somnopic.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/somnosoundmplabhsuprot.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/somnopic.tar *
 checkReturnCode
 
 # Cleanup

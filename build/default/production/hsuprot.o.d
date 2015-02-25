@@ -1,4 +1,4 @@
 build/default/production/hsuprot.o:  \
-	R:/org/Institute/IMM/Projekte/P_04/SomnoSound/03_Software/Mikrocontroller/Somno\ Sound\ MPLAB\ HSUPROT/hsuprot.c  \
-	R:/org/Institute/IMM/Projekte/P_04/SomnoSound/03_Software/Mikrocontroller/Somno\ Sound\ MPLAB\ HSUPROT/hsuprot.h  \
+	C:/Users/Lizenznehmer/Documents/GitHub/SomnoPic/hsuprot.c  \
+	C:/Users/Lizenznehmer/Documents/GitHub/SomnoPic/hsuprot.h  \
 

@@ -1,13 +1,5 @@
-/* 
- * File:   uC_main.h
- * Author: stuber
- *
- * Created on 18. Dezember 2012, 13:56
- */
-
 #ifndef UC_MAIN_H
 #define	UC_MAIN_H
-
 
 #define CS_SPI1     LATCbits.LATC2
 #define CS_SPI2     LATBbits.LATB4
@@ -32,8 +24,8 @@ union u_status {
     unsigned dataOVF        : 1;
     unsigned newRX          : 1;
     unsigned rxOVF          : 1;
-    unsigned bit4           : 1;
-    unsigned bit5           : 1;
+    unsigned newValues      : 1;
+    unsigned startADC       : 1;
     unsigned bit6           : 1;
     unsigned bit7           : 1;
   };
@@ -63,35 +55,6 @@ struct s_rxBuffer{
 //#define    CID_LED2_ON     = 0x21,     // LED_2 einschalten
 //#define    CID_LED2_TOG    = 0x23,
 //#define    CID_TIME        = 0x30,     // set sampling time (in ms)
-
-
-
-void InitInterrupts(void);
-void InitTimer1(void);
-void InitTimer0(void);
-void InitWT12(void);
-void InitMPU6000(void);
-void InitFlash(void);
-void GoToSleep(void);
-void GoToSleepWT12(void);
-void GoToSleepSensor(void);
-void GoToSleepFlash(void);
-void InitADC(void);
-void InitADC0(void);
-void InitCCP(void);
-
-void SendMessage(char message);
-void ReadIMUDataTest(void);
-void ReadIMUData(void);
-void ReadSensorData(void);
-void ReadSensorDataTest(void);
-void Erase4kSector(unsigned long int addr);
-void WriteToFlash(unsigned long int addr, unsigned char* buffer, unsigned char length);
-void ReadFromFlash(unsigned long int addr, unsigned char* buffer, unsigned char length);
-unsigned char FlashIsBusy(void);
-void IncrementFlashAddr(unsigned char length);
-void TransmitDataViaBT(void);
-void TransmitDataViaUSB(unsigned char* buffer, unsigned char length);
 
 #endif	/* UC_MAIN_H */
 

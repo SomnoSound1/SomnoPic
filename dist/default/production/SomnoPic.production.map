@@ -1,124 +1,114 @@
 MPLINK 4.40, Linker
-Linker Map File - Created Mon Feb 23 15:36:28 2015
+Linker Map File - Created Wed Feb 25 11:08:02 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
-      .idata_adcclose.o_i    romdata   0x000006    program   0x000000
+     .code_uC_interrupt.o       code   0x000006    program   0x000000
        .idata_adcbusy.o_i    romdata   0x000006    program   0x000000
-       .idata_adcconv.o_i    romdata   0x000006    program   0x000000
-       .idata_fxm3232.o_i    romdata   0x000006    program   0x000000
-        .idata_u1open.o_i    romdata   0x000006    program   0x000000
        .idata_hsuprot.o_i    romdata   0x000006    program   0x000000
-        .idata_u2open.o_i    romdata   0x000006    program   0x000000
+      .idata_adcclose.o_i    romdata   0x000006    program   0x000000
+       .idata_adcconv.o_i    romdata   0x000006    program   0x000000
+        .idata_u1open.o_i    romdata   0x000006    program   0x000000
        .idata_adcopen.o_i    romdata   0x000006    program   0x000000
       .idata_spi1open.o_i    romdata   0x000006    program   0x000000
-      .idata_spi2open.o_i    romdata   0x000006    program   0x000000
         .idata_t0open.o_i    romdata   0x000006    program   0x000000
         .idata_t1open.o_i    romdata   0x000006    program   0x000000
        .idata_adcread.o_i    romdata   0x000006    program   0x000000
       .idata_spi1read.o_i    romdata   0x000006    program   0x000000
-      .idata_spi2read.o_i    romdata   0x000006    program   0x000000
       .idata_spi1writ.o_i    romdata   0x000006    program   0x000000
-      .idata_spi2writ.o_i    romdata   0x000006    program   0x000000
             .code_c018i.o       code   0x000006    program   0x000000
          .idata_c018i.o_i    romdata   0x000006    program   0x000000
-   HIGH_INTERRUPTS_VECTOR       code   0x000008    program   0x001282
-                   .cinit    romdata   0x00128a    program   0x00000e
-          .code_hsuprot.o       code   0x001298    program   0x0003c0
-          .code_uC_main.o       code   0x001658    program   0x0000b2
-               _cinit_scn       code   0x00170a    program   0x00009e
-           .code_u2open.o       code   0x0017a8    program   0x000078
-           .code_u1open.o       code   0x001820    program   0x000072
-          .code_fxm3232.o       code   0x001892    program   0x000070
-          .code_adcopen.o       code   0x001902    program   0x000060
-           .code_t1open.o       code   0x001962    program   0x000054
-             .stringtable    romdata   0x0019b6    program   0x000053
-       .romdata_adcread.o    romdata   0x001a09    program   0x000000
-        .romdata_t1open.o    romdata   0x001a09    program   0x000000
-        .romdata_t0open.o    romdata   0x001a09    program   0x000000
-      .romdata_spi1read.o    romdata   0x001a09    program   0x000000
-       .idata_uC_main.o_i    romdata   0x001a09    program   0x000001
-      .romdata_spi2open.o    romdata   0x001a09    program   0x000000
-      .romdata_spi1writ.o    romdata   0x001a09    program   0x000000
-      .romdata_spi1open.o    romdata   0x001a09    program   0x000000
-       .romdata_adcopen.o    romdata   0x001a09    program   0x000000
-      .romdata_spi2read.o    romdata   0x001a09    program   0x000000
-        .romdata_u2open.o    romdata   0x001a09    program   0x000000
-      .romdata_spi2writ.o    romdata   0x001a09    program   0x000000
-        .romdata_u1open.o    romdata   0x001a09    program   0x000000
-       .romdata_hsuprot.o    romdata   0x001a09    program   0x000000
-       .romdata_fxm3232.o    romdata   0x001a09    program   0x000000
-         .romdata_c018i.o    romdata   0x001a09    program   0x000000
-       .romdata_adcbusy.o    romdata   0x001a09    program   0x000000
-       .romdata_adcconv.o    romdata   0x001a09    program   0x000000
-      .romdata_adcclose.o    romdata   0x001a09    program   0x000000
-                   STRING       code   0x001a0a    program   0x00004e
-         .code_spi2open.o       code   0x001a58    program   0x00004c
-         .code_spi1open.o       code   0x001aa4    program   0x00004c
-         .code_spi2writ.o       code   0x001af0    program   0x00003c
-         .code_spi1writ.o       code   0x001b2c    program   0x00003c
-           .code_t0open.o       code   0x001b68    program   0x000038
-       .romdata_uC_main.o    romdata   0x001ba0    program   0x000034
-             D10KTCYXCODE       code   0x001bd4    program   0x00002e
-         .code_spi2read.o       code   0x001c02    program   0x00002e
-         .code_spi1read.o       code   0x001c30    program   0x00002e
-              D1KTCYXCODE       code   0x001c5e    program   0x000020
-                    .code       code   0x001c7e    program   0x000020
-             _startup_scn       code   0x001c9e    program   0x00001c
-              D10TCYXCODE       code   0x001cba    program   0x000016
-          .code_adcread.o       code   0x001cd0    program   0x000012
-          .code_adcbusy.o       code   0x001ce2    program   0x00000a
-         .code_adcclose.o       code   0x001cec    program   0x000006
-          .code_adcconv.o       code   0x001cf2    program   0x000004
+   HIGH_INTERRUPTS_VECTOR       code   0x000008    program   0x00008c
+                   .cinit    romdata   0x000094    program   0x00000e
+     .code_uC_functions.o       code   0x0000a2    program   0x000784
+          .code_uC_init.o       code   0x000826    program   0x0005c0
+          .code_hsuprot.o       code   0x000de6    program   0x0003c0
+               _cinit_scn       code   0x0011a6    program   0x00009e
+           .code_u1open.o       code   0x001244    program   0x000072
+          .code_adcopen.o       code   0x0012b6    program   0x000060
+           .code_t1open.o       code   0x001316    program   0x000054
+             .stringtable    romdata   0x00136a    program   0x000053
+        .romdata_u1open.o    romdata   0x0013bd    program   0x000000
+       .romdata_adcopen.o    romdata   0x0013bd    program   0x000000
+      .romdata_spi1open.o    romdata   0x0013bd    program   0x000000
+        .romdata_t0open.o    romdata   0x0013bd    program   0x000000
+       .romdata_uC_main.o    romdata   0x0013bd    program   0x000000
+        .romdata_t1open.o    romdata   0x0013bd    program   0x000000
+       .idata_uC_main.o_i    romdata   0x0013bd    program   0x000000
+       .romdata_adcread.o    romdata   0x0013bd    program   0x000000
+      .romdata_spi1read.o    romdata   0x0013bd    program   0x000000
+      .romdata_spi1writ.o    romdata   0x0013bd    program   0x000000
+         .romdata_c018i.o    romdata   0x0013bd    program   0x000000
+  .idata_uC_interrupt.o_i    romdata   0x0013bd    program   0x000000
+       .idata_uC_init.o_i    romdata   0x0013bd    program   0x000000
+       .romdata_adcconv.o    romdata   0x0013bd    program   0x000000
+       .romdata_uC_init.o    romdata   0x0013bd    program   0x000000
+  .idata_uC_functions.o_i    romdata   0x0013bd    program   0x000001
+  .romdata_uC_functions.o    romdata   0x0013bd    program   0x000000
+      .romdata_adcclose.o    romdata   0x0013bd    program   0x000000
+       .romdata_hsuprot.o    romdata   0x0013bd    program   0x000000
+       .romdata_adcbusy.o    romdata   0x0013bd    program   0x000000
+                   STRING       code   0x0013be    program   0x00004e
+          .code_uC_main.o       code   0x00140c    program   0x00004e
+         .code_spi1open.o       code   0x00145a    program   0x00004c
+         .code_spi1writ.o       code   0x0014a6    program   0x00003c
+           .code_t0open.o       code   0x0014e2    program   0x000038
+  .romdata_uC_interrupt.o    romdata   0x00151a    program   0x000034
+             D10KTCYXCODE       code   0x00154e    program   0x00002e
+         .code_spi1read.o       code   0x00157c    program   0x00002e
+              D1KTCYXCODE       code   0x0015aa    program   0x000020
+                    .code       code   0x0015ca    program   0x000020
+             _startup_scn       code   0x0015ea    program   0x00001c
+              D10TCYXCODE       code   0x001606    program   0x000016
+          .code_adcread.o       code   0x00161c    program   0x000012
+          .code_adcbusy.o       code   0x00162e    program   0x00000a
+         .code_adcclose.o       code   0x001638    program   0x000006
+          .code_adcconv.o       code   0x00163e    program   0x000004
  .config_300001_uC_main.o    romdata   0x300001    program   0x000001
  .config_300002_uC_main.o    romdata   0x300002    program   0x000001
  .config_300003_uC_main.o    romdata   0x300003    program   0x000001
  .config_300005_uC_main.o    romdata   0x300005    program   0x000001
  .config_300006_uC_main.o    romdata   0x300006    program   0x000001
-                MATH_DATA      udata   0x000000       data   0x000010
-                 .tmpdata      udata   0x000010       data   0x000006
-                DELAYDAT2      udata   0x000016       data   0x000001
-                DELAYDAT1      udata   0x000017       data   0x000001
+                 .tmpdata      udata   0x000000       data   0x000006
+                MATH_DATA      udata   0x000006       data   0x000002
+                DELAYDAT2      udata   0x000008       data   0x000001
+                DELAYDAT1      udata   0x000009       data   0x000001
          .udata_hsuprot.o      udata   0x000060       data   0x000070
-         .udata_uC_main.o      udata   0x000100       data   0x0000f3
-           .udata_c018i.o      udata   0x0001f3       data   0x00000a
-         .idata_uC_main.o      idata   0x0001fd       data   0x000001
-        .udata_spi1open.o      udata   0x0001fe       data   0x000000
-        .idata_spi1open.o      idata   0x0001fe       data   0x000000
-        .udata_spi2open.o      udata   0x0001fe       data   0x000000
-        .idata_spi2open.o      idata   0x0001fe       data   0x000000
-          .udata_t0open.o      udata   0x0001fe       data   0x000000
-          .idata_t0open.o      idata   0x0001fe       data   0x000000
-          .udata_t1open.o      udata   0x0001fe       data   0x000000
-          .idata_t1open.o      idata   0x0001fe       data   0x000000
-         .udata_adcread.o      udata   0x0001fe       data   0x000000
-         .idata_adcread.o      idata   0x0001fe       data   0x000000
-        .udata_spi1read.o      udata   0x0001fe       data   0x000000
-        .idata_spi1read.o      idata   0x0001fe       data   0x000000
-        .udata_spi2read.o      udata   0x0001fe       data   0x000000
-        .idata_spi2read.o      idata   0x0001fe       data   0x000000
-        .udata_spi1writ.o      udata   0x0001fe       data   0x000000
-        .idata_spi1writ.o      idata   0x0001fe       data   0x000000
-        .udata_spi2writ.o      udata   0x0001fe       data   0x000000
-        .idata_spi2writ.o      idata   0x0001fe       data   0x000000
-           .idata_c018i.o      idata   0x0001fe       data   0x000000
-         .idata_hsuprot.o      idata   0x0001fe       data   0x000000
-         .udata_adcbusy.o      udata   0x0001fe       data   0x000000
-         .idata_adcbusy.o      idata   0x0001fe       data   0x000000
-        .udata_adcclose.o      udata   0x0001fe       data   0x000000
-        .idata_adcclose.o      idata   0x0001fe       data   0x000000
-         .udata_adcconv.o      udata   0x0001fe       data   0x000000
-         .idata_adcconv.o      idata   0x0001fe       data   0x000000
-         .udata_fxm3232.o      udata   0x0001fe       data   0x000000
-         .idata_fxm3232.o      idata   0x0001fe       data   0x000000
-          .udata_u1open.o      udata   0x0001fe       data   0x000000
-          .idata_u1open.o      idata   0x0001fe       data   0x000000
-          .udata_u2open.o      udata   0x0001fe       data   0x000000
-          .idata_u2open.o      idata   0x0001fe       data   0x000000
-         .udata_adcopen.o      udata   0x0001fe       data   0x000000
-         .idata_adcopen.o      idata   0x0001fe       data   0x000000
+           .udata_c018i.o      udata   0x0000d0       data   0x00000a
+    .udata_uC_functions.o      udata   0x0000da       data   0x000007
+         .udata_uC_main.o      udata   0x0000e1       data   0x000002
+         .udata_uC_init.o      udata   0x0000e3       data   0x000002
+    .idata_uC_functions.o      idata   0x0000e5       data   0x000001
+          .idata_u1open.o      idata   0x0000e6       data   0x000000
+         .udata_adcopen.o      udata   0x0000e6       data   0x000000
+         .idata_adcopen.o      idata   0x0000e6       data   0x000000
+        .udata_spi1open.o      udata   0x0000e6       data   0x000000
+        .idata_spi1open.o      idata   0x0000e6       data   0x000000
+          .udata_t0open.o      udata   0x0000e6       data   0x000000
+          .idata_t0open.o      idata   0x0000e6       data   0x000000
+          .udata_t1open.o      udata   0x0000e6       data   0x000000
+          .idata_t1open.o      idata   0x0000e6       data   0x000000
+         .udata_adcread.o      udata   0x0000e6       data   0x000000
+         .idata_adcread.o      idata   0x0000e6       data   0x000000
+        .udata_spi1read.o      udata   0x0000e6       data   0x000000
+        .idata_spi1read.o      idata   0x0000e6       data   0x000000
+        .udata_spi1writ.o      udata   0x0000e6       data   0x000000
+        .idata_spi1writ.o      idata   0x0000e6       data   0x000000
+          .udata_u1open.o      udata   0x0000e6       data   0x000000
+         .idata_adcconv.o      idata   0x0000e6       data   0x000000
+         .udata_adcconv.o      udata   0x0000e6       data   0x000000
+        .idata_adcclose.o      idata   0x0000e6       data   0x000000
+        .udata_adcclose.o      udata   0x0000e6       data   0x000000
+         .idata_adcbusy.o      idata   0x0000e6       data   0x000000
+         .udata_adcbusy.o      udata   0x0000e6       data   0x000000
+           .idata_c018i.o      idata   0x0000e6       data   0x000000
+         .idata_uC_main.o      idata   0x0000e6       data   0x000000
+         .idata_uC_init.o      idata   0x0000e6       data   0x000000
+    .idata_uC_interrupt.o      idata   0x0000e6       data   0x000000
+         .idata_hsuprot.o      idata   0x0000e6       data   0x000000
+    .udata_uC_interrupt.o      udata   0x000100       data   0x0000cc
                    .stack      udata   0x000200       data   0x000100
               SFR_BANKED0      udata   0x000f38       data   0x000003
               SFR_BANKED1      udata   0x000f3d       data   0x000023
@@ -130,159 +120,129 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000005      
-                            0x000008    0x001cf5      
+                            0x000008    0x001641      
                             0x300001    0x300003      
                             0x300005    0x300006      
-            7417 out of 16664 program addresses used, program memory utilization is 44%
+            5701 out of 16664 program addresses used, program memory utilization is 34%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                  BusyADC   0x001ce2    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
-                 CloseADC   0x001cec    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
-               ConvertADC   0x001cf2    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
-                   D10K_1   0x001be0    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001bec    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001bde    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x001cca    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001cc2    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x001c6a    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x001c68    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-             Delay10KTCYx   0x001bd4    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x001cba    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x001c5e    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-            Erase4kSector   0x000988    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  FXM3232   0x001892    program     extern C:\MCC18\v3_39\src\traditional\math\fxm3232.c
-              FlashIsBusy   0x000a4a    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                GoToSleep   0x00106e    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-           GoToSleepFlash   0x001142    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-          GoToSleepSensor   0x001114    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            GoToSleepWT12   0x001084    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              HSUprotInit   0x001298    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-       IncrementFlashAddr   0x000f98    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  InitADC   0x00115c    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 InitADC0   0x0001f2    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  InitCCP   0x00020a    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                InitFlash   0x0006b4    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-           InitInterrupts   0x000192    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              InitMPU6000   0x000542    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               InitTimer0   0x0001a8    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               InitTimer1   0x0001ca    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 InitWT12   0x000244    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  MakePck   0x001440    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-               Open1USART   0x001820    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
-               Open2USART   0x0017a8    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u2open.c
-                  OpenADC   0x001902    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
-                 OpenSPI1   0x001aa4    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
-                 OpenSPI2   0x001a58    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi2open.c
-               OpenTimer0   0x001b68    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
-               OpenTimer1   0x001962    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
-             RXbyteImport   0x0012a2    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                  ReadADC   0x001cd0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
-            ReadFromFlash   0x0008b4    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              ReadIMUData   0x000bba    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-          ReadIMUDataTest   0x000ac0    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 ReadSPI1   0x001c30    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
-                 ReadSPI2   0x001c02    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi2read.c
-           ReadSensorData   0x000a70    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-       ReadSensorDataTest   0x000a98    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              SendMessage   0x000f4e    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  SendPck   0x0013d8    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-        TransmitDataViaBT   0x000ed4    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-       TransmitDataViaUSB   0x000f8c    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                WriteSPI1   0x001b2c    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
-                WriteSPI2   0x001af0    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi2writ.c
-             WriteToFlash   0x000734    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-       _D10KTCYXCODE_0010   0x001be4    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001bf0    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x001cc4    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001cc6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x001cc8    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x001c6e    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x001c74    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-           ___if_lbl00013   0x000020    program     static                          
-           ___if_lbl00016   0x000046    program     static                          
-           ___if_lbl00017   0x000058    program     static                          
-           ___if_lbl00018   0x00005c    program     static                          
-           ___if_lbl00019   0x00006e    program     static                          
-           ___if_lbl00020   0x000076    program     static                          
-           ___if_lbl00021   0x00007a    program     static                          
-           ___if_lbl00023   0x00008a    program     static                          
-           ___if_lbl00025   0x0000cc    program     static                          
-           ___if_lbl00026   0x0000cc    program     static                          
-           ___if_lbl00029   0x000100    program     static                          
-           ___if_lbl00030   0x00010c    program     static                          
-           ___if_lbl00031   0x00011e    program     static                          
-           ___if_lbl00032   0x000128    program     static                          
-           ___if_lbl00033   0x000128    program     static                          
-           ___if_lbl00035   0x000136    program     static                          
+                  BusyADC   0x00162e    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
+                 CloseADC   0x001638    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
+                 CloseAll   0x0006d0    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+               ConvertADC   0x00163e    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
+                   D10K_1   0x00155a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001566    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x001558    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x001616    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00160e    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x0015b6    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0015b4    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x00154e    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x001606    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x0015aa    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                  GetData   0x0000a2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                GoToSleep   0x0005fc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+          GoToSleepSensor   0x0006a2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+            GoToSleepWT12   0x00060c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+              HSUprotInit   0x000de6    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  InitADC   0x0006ec    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                 InitADC0   0x0008e2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+            InitBluetooth   0x000936    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                  InitCCP   0x0008fa    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+           InitInterrupts   0x00087e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+              InitMPU6000   0x000c72    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               InitTimer0   0x000894    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               InitTimer1   0x0008b8    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                 InitWT12   0x000956    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                  MakePck   0x000f8e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+               Open1USART   0x001244    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
+                  OpenADC   0x0012b6    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
+                 OpenSPI1   0x00145a    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
+               OpenTimer0   0x0014e2    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
+               OpenTimer1   0x001316    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
+             RXbyteImport   0x000df0    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  ReadADC   0x00161c    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
+              ReadIMUData   0x000226    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+          ReadIMUDataTest   0x00012c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                 ReadSPI1   0x00157c    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
+           ReadSensorData   0x0000dc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+       ReadSensorDataTest   0x000104    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+              SendMessage   0x0005be    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                  SendPck   0x000f26    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+        TransmitDataViaBT   0x000540    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                WriteSPI1   0x0014a6    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
+       _D10KTCYXCODE_0010   0x00155e    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00156a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x001610    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x001612    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x001614    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x0015ba    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x0015c0    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+           ___if_lbl00002   0x000022    program     static                          
+           ___if_lbl00004   0x000034    program     static                          
+           ___if_lbl00007   0x000068    program     static                          
+           ___if_lbl00008   0x000074    program     static                          
+           ___if_lbl00009   0x000086    program     static                          
+           ___if_lbl00010   0x000090    program     static                          
+           ___if_lbl00011   0x000090    program     static                          
+       ___return_lbl00000   0x000092    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x001900    program     static                          
-       ___return_lbl00001   0x001cb8    program     static                          
-       ___return_lbl00002   0x0017a6    program     static                          
-       ___return_lbl00011   0x000138    program     static                          
-       ___return_lbl00173   0x001082    program     static                          
-        ___while_lbl00174   0x001076    program     static                          
-        ___while_lbl00175   0x00107e    program     static                          
-               __config_0   0x300001    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_1   0x300002    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_2   0x300003    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_3   0x300005    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_4   0x300006    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   __init   0x00013a    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              __string_10   0x0019b6    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_5   0x001a06    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_6   0x0019f3    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_7   0x0019e0    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_8   0x0019c4    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_9   0x0019c0    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              __tmplbl_10   0x000086    program     static                          
-              __tmplbl_11   0x000080    program     static                          
-              __tmplbl_12   0x000096    program     static                          
-              __tmplbl_13   0x000090    program     static                          
-              __tmplbl_14   0x0000ba    program     static                          
-              __tmplbl_15   0x0000b6    program     static                          
-              __tmplbl_16   0x0000d8    program     static                          
-              __tmplbl_17   0x0000d2    program     static                          
-              __tmplbl_18   0x0000f8    program     static                          
-              __tmplbl_19   0x0000ee    program     static                          
-              __tmplbl_20   0x000134    program     static                          
-              __tmplbl_21   0x00012e    program     static                          
-               __tmplbl_4   0x000014    program     static                          
-               __tmplbl_5   0x00000e    program     static                          
-               __tmplbl_6   0x00002c    program     static                          
-               __tmplbl_7   0x000026    program     static                          
-               __tmplbl_8   0x000042    program     static                          
-               __tmplbl_9   0x00003a    program     static                          
-            __zero_memory   0x001c7e    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                _do_cinit   0x00170a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+       ___return_lbl00001   0x001604    program     static                          
+       ___return_lbl00002   0x001242    program     static                          
+       ___return_lbl00070   0x00060a    program     static                          
+        ___while_lbl00071   0x000602    program     static                          
+        ___while_lbl00072   0x000606    program     static                          
+               __config_0   0x300001    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_1   0x300002    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_2   0x300003    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_3   0x300005    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_4   0x300006    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                   __init   0x000826    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0013b3    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+               __string_0   0x0013b0    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_1   0x00139d    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_2   0x00138a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_3   0x00136e    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_4   0x00136a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __tmplbl_0   0x000014    program     static                          
+               __tmplbl_1   0x00000e    program     static                          
+               __tmplbl_2   0x00002e    program     static                          
+               __tmplbl_3   0x000028    program     static                          
+               __tmplbl_4   0x000040    program     static                          
+               __tmplbl_5   0x00003a    program     static                          
+               __tmplbl_6   0x000060    program     static                          
+               __tmplbl_7   0x000056    program     static                          
+            __zero_memory   0x0015ca    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                _do_cinit   0x0011a6    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                 _startup   0x001c9e    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                compare_l   0x001c94    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                copy_loop   0x00177c    program     static                          
-            copy_one_byte   0x001782    program     static                          
-                     done   0x0017a6    program     static                          
-             done_copying   0x001790    program     static                          
-           interrupt_HIGH   0x000008    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     jEnd   0x001a56    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     jEnd   0x001a3a    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                    jLoop   0x001a30    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                    jLoop   0x001a4c    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     loop   0x001cae    program     static                          
-                   loop_h   0x001c8c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   loop_l   0x001c96    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     main   0x001658    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  strDate   0x001bb7    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                strDevice   0x001ba0    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  strManu   0x001bca    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  strMisc   0x001bd1    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               strVersion   0x001bab    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            strcpypgm2ram   0x001a0a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                   strlen   0x001a3c    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     test   0x001724    program     static                          
-               zero_block   0x001c8c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 _startup   0x0015ea    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                compare_l   0x0015e0    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                copy_loop   0x001218    program     static                          
+            copy_one_byte   0x00121e    program     static                          
+                     done   0x001242    program     static                          
+             done_copying   0x00122c    program     static                          
+           interrupt_HIGH   0x000008    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                     jEnd   0x00140a    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     jEnd   0x0013ee    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                    jLoop   0x0013e4    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                    jLoop   0x001400    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     loop   0x0015fa    program     static                          
+                   loop_h   0x0015d8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   loop_l   0x0015e2    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     main   0x00140c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                  strDate   0x001531    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                strDevice   0x00151a    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strManu   0x001544    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strMisc   0x00154b    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+               strVersion   0x001525    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+            strcpypgm2ram   0x0013be    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                   strlen   0x0013f0    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     test   0x0011c0    program     static                          
+               zero_block   0x0015d8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -292,7 +252,7 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                     ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  AFS_SEL   0x000171       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+                  AFS_SEL   0x0001c7       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
                    ANSELA   0x000f38       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ANSELAbits   0x000f38       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ANSELB   0x000f39       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -379,10 +339,10 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                  DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-            DelayCounter1   0x000017       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd1.asm
-            DelayCounter2   0x000016       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd2.asm
-                     Dev1   0x000177       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     Dev2   0x000178       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+            DelayCounter1   0x000009       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000008       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd2.asm
+                     Dev1   0x0000db       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                     Dev2   0x0000dc       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
                   ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   ECCP2AS   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -406,7 +366,7 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                      FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   FS_SEL   0x000170       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+                   FS_SEL   0x0001c6       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
                    FVRCON   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                FVRCONbits   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   HLVDCON   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -440,11 +400,11 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                  LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    LVDCON   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                LVDCONbits   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  MOT_DUR   0x000174       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   MOT_EN   0x000172       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  MOT_INT   0x000175       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  MOT_THR   0x000173       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    Manuf   0x000176       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+                  MOT_DUR   0x0001ca       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   MOT_EN   0x0001c8       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  MOT_INT   0x0001cb       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  MOT_THR   0x0001c9       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                    Manuf   0x0000da       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
                    OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   OSCCON2   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               OSCCON2bits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -498,7 +458,7 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                  POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 POWER_OK   0x000188       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+                 POWER_OK   0x0000e0       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
                       PR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                       PR4   0x000f52       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                       PR6   0x000f4b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -544,7 +504,7 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                    RCSTA2   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                RCSTA2bits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     SIGN   0x00000e       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                     SIGN   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
                    SLRCON   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SLRCONbits   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SP1BRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -637,10 +597,10 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                   TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               TBLPTRUbits   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-            TM0_HightByte   0x000106       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              TM0_LowByte   0x000104       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            TM1_HightByte   0x000107       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              TM1_LowByte   0x000105       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+            TM0_HightByte   0x000102       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+              TM0_LowByte   0x000100       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+            TM1_HightByte   0x000103       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+              TM1_LowByte   0x000101       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
                     TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -682,7 +642,7 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                    TXSTA2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                TXSTA2bits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 Testbyte   0x0001fd       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+                 Testbyte   0x0000e5       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
                  VREFCON0   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              VREFCON0bits   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  VREFCON1   0x000f41       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -695,60 +655,35 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                      WPUB   0x000f61       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  WPUBbits   0x000f61       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 __AARGB0   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB1   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB2   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB3   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB4   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB5   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB6   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB7   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                   __AEXP   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __BARGB0   0x00000c       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                 __BARGB1   0x00000b       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                 __BARGB2   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                 __BARGB3   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                   __BEXP   0x00000d       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                __FPFLAGS   0x00000f       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x00000f       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
-                  __REMB0   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __REMB1   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __REMB2   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __REMB3   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\USART\u2open.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
-                  __tmp_0   0x000010       data     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  __tmp_0   0x000010       data     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                     addr   0x00017a       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-             batt_voltage   0x000186       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 buff_len   0x00010d       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                connected   0x00015f       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                curr_byte   0x0001f6       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-               curr_entry   0x0001f8       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     data   0x000162       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               dataBuffer   0x00018a       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 data_ptr   0x0001fa       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                   dev_id   0x000161       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    go_on   0x00010a       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                        i   0x00010b       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    inPck   0x000060       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                     mode   0x000160       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 old_addr   0x00017e       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               old_sector   0x000184       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   outPck   0x000098       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                     prom   0x0001f3       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                rx_buffer   0x00012d       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 rx_count   0x00012c       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   sector   0x000182       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    spbrg   0x000108       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   status   0x000179       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               statusData   0x000189       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              tick_counts   0x00010c       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   timer0   0x000100       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   timer1   0x000102       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                tx_buffer   0x00010e       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+                __FPFLAGS   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000000       data     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  __tmp_0   0x000000       data     static C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
+                  __tmp_0   0x000000       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
+                  __tmp_0   0x000000       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
+                  __tmp_0   0x000000       data     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                  __tmp_0   0x000000       data     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+             batt_voltage   0x0000de       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                 buff_len   0x000171       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                curr_byte   0x0000d3       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x0000d5       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               dataBuffer   0x000108       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                 data_ptr   0x0000d7       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   dev_id   0x0001c5       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                        i   0x0001c3       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                    inPck   0x000060       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                     mode   0x0000e1       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                   outPck   0x000098       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                     prom   0x0000d0       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                rx_buffer   0x000191       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                 rx_count   0x000190       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                    spbrg   0x0000e3       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                   status   0x0000dd       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+               statusData   0x0000e2       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+              tick_counts   0x0001c4       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   timer0   0x000104       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   timer1   0x000106       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                tx_buffer   0x000172       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
 
 
 
@@ -757,263 +692,208 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                 ---------  ---------  ---------  --------- ---------                
                    _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
-           interrupt_HIGH   0x000008    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __tmplbl_5   0x00000e    program     static                          
-               __tmplbl_4   0x000014    program     static                          
-           ___if_lbl00013   0x000020    program     static                          
-               __tmplbl_7   0x000026    program     static                          
-               __tmplbl_6   0x00002c    program     static                          
-               __tmplbl_9   0x00003a    program     static                          
-               __tmplbl_8   0x000042    program     static                          
-           ___if_lbl00016   0x000046    program     static                          
-           ___if_lbl00017   0x000058    program     static                          
-           ___if_lbl00018   0x00005c    program     static                          
-           ___if_lbl00019   0x00006e    program     static                          
-           ___if_lbl00020   0x000076    program     static                          
-           ___if_lbl00021   0x00007a    program     static                          
-              __tmplbl_11   0x000080    program     static                          
-              __tmplbl_10   0x000086    program     static                          
-           ___if_lbl00023   0x00008a    program     static                          
-              __tmplbl_13   0x000090    program     static                          
-              __tmplbl_12   0x000096    program     static                          
-              __tmplbl_15   0x0000b6    program     static                          
-              __tmplbl_14   0x0000ba    program     static                          
-           ___if_lbl00025   0x0000cc    program     static                          
-           ___if_lbl00026   0x0000cc    program     static                          
-              __tmplbl_17   0x0000d2    program     static                          
-              __tmplbl_16   0x0000d8    program     static                          
-              __tmplbl_19   0x0000ee    program     static                          
-              __tmplbl_18   0x0000f8    program     static                          
-           ___if_lbl00029   0x000100    program     static                          
-           ___if_lbl00030   0x00010c    program     static                          
-           ___if_lbl00031   0x00011e    program     static                          
-           ___if_lbl00032   0x000128    program     static                          
-           ___if_lbl00033   0x000128    program     static                          
-              __tmplbl_21   0x00012e    program     static                          
-              __tmplbl_20   0x000134    program     static                          
-           ___if_lbl00035   0x000136    program     static                          
-       ___return_lbl00011   0x000138    program     static                          
-                   __init   0x00013a    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-           InitInterrupts   0x000192    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               InitTimer0   0x0001a8    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               InitTimer1   0x0001ca    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 InitADC0   0x0001f2    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  InitCCP   0x00020a    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 InitWT12   0x000244    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              InitMPU6000   0x000542    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                InitFlash   0x0006b4    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-             WriteToFlash   0x000734    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            ReadFromFlash   0x0008b4    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            Erase4kSector   0x000988    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              FlashIsBusy   0x000a4a    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-           ReadSensorData   0x000a70    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-       ReadSensorDataTest   0x000a98    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-          ReadIMUDataTest   0x000ac0    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              ReadIMUData   0x000bba    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-        TransmitDataViaBT   0x000ed4    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              SendMessage   0x000f4e    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-       TransmitDataViaUSB   0x000f8c    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-       IncrementFlashAddr   0x000f98    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                GoToSleep   0x00106e    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-        ___while_lbl00174   0x001076    program     static                          
-        ___while_lbl00175   0x00107e    program     static                          
-       ___return_lbl00173   0x001082    program     static                          
-            GoToSleepWT12   0x001084    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-          GoToSleepSensor   0x001114    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-           GoToSleepFlash   0x001142    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  InitADC   0x00115c    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              HSUprotInit   0x001298    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-             RXbyteImport   0x0012a2    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                  SendPck   0x0013d8    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                  MakePck   0x001440    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                     main   0x001658    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                _do_cinit   0x00170a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     test   0x001724    program     static                          
-                copy_loop   0x00177c    program     static                          
-            copy_one_byte   0x001782    program     static                          
-             done_copying   0x001790    program     static                          
-                     done   0x0017a6    program     static                          
-       ___return_lbl00002   0x0017a6    program     static                          
-               Open2USART   0x0017a8    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u2open.c
-               Open1USART   0x001820    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
-                  FXM3232   0x001892    program     extern C:\MCC18\v3_39\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x001900    program     static                          
-                  OpenADC   0x001902    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
-               OpenTimer1   0x001962    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
-              __string_10   0x0019b6    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_9   0x0019c0    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_8   0x0019c4    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_7   0x0019e0    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_6   0x0019f3    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __string_5   0x001a06    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            strcpypgm2ram   0x001a0a    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                    jLoop   0x001a30    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                     jEnd   0x001a3a    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                   strlen   0x001a3c    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                    jLoop   0x001a4c    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     jEnd   0x001a56    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                 OpenSPI2   0x001a58    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi2open.c
-                 OpenSPI1   0x001aa4    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
-                WriteSPI2   0x001af0    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi2writ.c
-                WriteSPI1   0x001b2c    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
-               OpenTimer0   0x001b68    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
-                strDevice   0x001ba0    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               strVersion   0x001bab    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  strDate   0x001bb7    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  strManu   0x001bca    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  strMisc   0x001bd1    program     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-             Delay10KTCYx   0x001bd4    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001bde    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x001be0    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x001be4    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001bec    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001bf0    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                 ReadSPI2   0x001c02    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi2read.c
-                 ReadSPI1   0x001c30    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
-              Delay1KTCYx   0x001c5e    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x001c68    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x001c6a    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x001c6e    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x001c74    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x001c7e    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   loop_h   0x001c8c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               zero_block   0x001c8c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                compare_l   0x001c94    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   loop_l   0x001c96    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 _startup   0x001c9e    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     loop   0x001cae    program     static                          
-       ___return_lbl00001   0x001cb8    program     static                          
-              Delay10TCYx   0x001cba    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001cc2    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x001cc4    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001cc6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x001cc8    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x001cca    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                  ReadADC   0x001cd0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
-                  BusyADC   0x001ce2    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
-                 CloseADC   0x001cec    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
-               ConvertADC   0x001cf2    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
-               __config_0   0x300001    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_1   0x300002    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_2   0x300003    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_3   0x300005    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               __config_4   0x300006    program     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  __REMB3   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB7   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __REMB2   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB6   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __REMB1   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB5   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                  __REMB0   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB4   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB3   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB2   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB1   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __AARGB0   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                   __AEXP   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
-                 __BARGB3   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                 __BARGB2   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                 __BARGB1   0x00000b       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                 __BARGB0   0x00000c       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                   __BEXP   0x00000d       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
-                     SIGN   0x00000e       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x00000f       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
-                __FPFLAGS   0x00000f       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000010       data     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                  __tmp_0   0x000010       data     static R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\USART\u2open.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
-                  __tmp_0   0x000010       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
-            DelayCounter2   0x000016       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd2.asm
-            DelayCounter1   0x000017       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd1.asm
-                    inPck   0x000060       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                   outPck   0x000098       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\hsuprot.c
-                   timer0   0x000100       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   timer1   0x000102       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              TM0_LowByte   0x000104       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              TM1_LowByte   0x000105       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            TM0_HightByte   0x000106       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-            TM1_HightByte   0x000107       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    spbrg   0x000108       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    go_on   0x00010a       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                        i   0x00010b       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-              tick_counts   0x00010c       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 buff_len   0x00010d       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                tx_buffer   0x00010e       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 rx_count   0x00012c       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                rx_buffer   0x00012d       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                connected   0x00015f       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     mode   0x000160       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   dev_id   0x000161       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     data   0x000162       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   FS_SEL   0x000170       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  AFS_SEL   0x000171       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   MOT_EN   0x000172       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  MOT_THR   0x000173       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  MOT_DUR   0x000174       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                  MOT_INT   0x000175       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                    Manuf   0x000176       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     Dev1   0x000177       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     Dev2   0x000178       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   status   0x000179       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     addr   0x00017a       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 old_addr   0x00017e       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                   sector   0x000182       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               old_sector   0x000184       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-             batt_voltage   0x000186       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                 POWER_OK   0x000188       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               statusData   0x000189       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-               dataBuffer   0x00018a       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
-                     prom   0x0001f3       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                curr_byte   0x0001f6       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-               curr_entry   0x0001f8       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                 data_ptr   0x0001fa       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                 Testbyte   0x0001fd       data     extern R:\org\Institute\IMM\Projekte\P_04\SomnoSound\03_Software\Mikrocontroller\Somno Sound MPLAB HSUPROT\uC_main.c
+           interrupt_HIGH   0x000008    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+               __tmplbl_1   0x00000e    program     static                          
+               __tmplbl_0   0x000014    program     static                          
+           ___if_lbl00002   0x000022    program     static                          
+               __tmplbl_3   0x000028    program     static                          
+               __tmplbl_2   0x00002e    program     static                          
+           ___if_lbl00004   0x000034    program     static                          
+               __tmplbl_5   0x00003a    program     static                          
+               __tmplbl_4   0x000040    program     static                          
+               __tmplbl_7   0x000056    program     static                          
+               __tmplbl_6   0x000060    program     static                          
+           ___if_lbl00007   0x000068    program     static                          
+           ___if_lbl00008   0x000074    program     static                          
+           ___if_lbl00009   0x000086    program     static                          
+           ___if_lbl00010   0x000090    program     static                          
+           ___if_lbl00011   0x000090    program     static                          
+       ___return_lbl00000   0x000092    program     static                          
+                  GetData   0x0000a2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+           ReadSensorData   0x0000dc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+       ReadSensorDataTest   0x000104    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+          ReadIMUDataTest   0x00012c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+              ReadIMUData   0x000226    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+        TransmitDataViaBT   0x000540    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+              SendMessage   0x0005be    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                GoToSleep   0x0005fc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+        ___while_lbl00071   0x000602    program     static                          
+        ___while_lbl00072   0x000606    program     static                          
+       ___return_lbl00070   0x00060a    program     static                          
+            GoToSleepWT12   0x00060c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+          GoToSleepSensor   0x0006a2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                 CloseAll   0x0006d0    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                  InitADC   0x0006ec    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                   __init   0x000826    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+           InitInterrupts   0x00087e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               InitTimer0   0x000894    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               InitTimer1   0x0008b8    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                 InitADC0   0x0008e2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                  InitCCP   0x0008fa    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+            InitBluetooth   0x000936    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                 InitWT12   0x000956    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+              InitMPU6000   0x000c72    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+              HSUprotInit   0x000de6    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+             RXbyteImport   0x000df0    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  SendPck   0x000f26    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  MakePck   0x000f8e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                _do_cinit   0x0011a6    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x0011c0    program     static                          
+                copy_loop   0x001218    program     static                          
+            copy_one_byte   0x00121e    program     static                          
+             done_copying   0x00122c    program     static                          
+                     done   0x001242    program     static                          
+       ___return_lbl00002   0x001242    program     static                          
+               Open1USART   0x001244    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
+                  OpenADC   0x0012b6    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
+               OpenTimer1   0x001316    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
+               __string_4   0x00136a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_3   0x00136e    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_2   0x00138a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_1   0x00139d    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0013b0    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0013b3    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+            strcpypgm2ram   0x0013be    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                    jLoop   0x0013e4    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                     jEnd   0x0013ee    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                   strlen   0x0013f0    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                    jLoop   0x001400    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     jEnd   0x00140a    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     main   0x00140c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                 OpenSPI1   0x00145a    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
+                WriteSPI1   0x0014a6    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
+               OpenTimer0   0x0014e2    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
+                strDevice   0x00151a    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+               strVersion   0x001525    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strDate   0x001531    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strManu   0x001544    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strMisc   0x00154b    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+             Delay10KTCYx   0x00154e    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x001558    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x00155a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x00155e    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001566    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00156a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                 ReadSPI1   0x00157c    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
+              Delay1KTCYx   0x0015aa    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0015b4    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x0015b6    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x0015ba    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x0015c0    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x0015ca    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   loop_h   0x0015d8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               zero_block   0x0015d8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                compare_l   0x0015e0    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   loop_l   0x0015e2    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 _startup   0x0015ea    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x0015fa    program     static                          
+       ___return_lbl00001   0x001604    program     static                          
+              Delay10TCYx   0x001606    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00160e    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x001610    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x001612    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x001614    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x001616    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                  ReadADC   0x00161c    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
+                  BusyADC   0x00162e    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
+                 CloseADC   0x001638    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
+               ConvertADC   0x00163e    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
+               __config_0   0x300001    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_1   0x300002    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_2   0x300003    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_3   0x300005    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               __config_4   0x300006    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                  __tmp_0   0x000000       data     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                  __tmp_0   0x000000       data     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                  __tmp_0   0x000000       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
+                  __tmp_0   0x000000       data     static C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
+                  __tmp_0   0x000000       data     static C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
+                  __tmp_0   0x000000       data     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                     SIGN   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            DelayCounter2   0x000008       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000009       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd1.asm
+                    inPck   0x000060       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                   outPck   0x000098       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                     prom   0x0000d0       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                curr_byte   0x0000d3       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x0000d5       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x0000d7       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                    Manuf   0x0000da       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                     Dev1   0x0000db       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                     Dev2   0x0000dc       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                   status   0x0000dd       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+             batt_voltage   0x0000de       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                 POWER_OK   0x0000e0       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                     mode   0x0000e1       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+               statusData   0x0000e2       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                    spbrg   0x0000e3       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                 Testbyte   0x0000e5       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+              TM0_LowByte   0x000100       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+              TM1_LowByte   0x000101       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+            TM0_HightByte   0x000102       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+            TM1_HightByte   0x000103       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   timer0   0x000104       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   timer1   0x000106       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+               dataBuffer   0x000108       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                 buff_len   0x000171       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                tx_buffer   0x000172       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                 rx_count   0x000190       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                rx_buffer   0x000191       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                        i   0x0001c3       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+              tick_counts   0x0001c4       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   dev_id   0x0001c5       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   FS_SEL   0x0001c6       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  AFS_SEL   0x0001c7       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                   MOT_EN   0x0001c8       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  MOT_THR   0x0001c9       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  MOT_DUR   0x0001ca       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  MOT_INT   0x0001cb       data     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
                    ANSELA   0x000f38       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ANSELAbits   0x000f38       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ANSELB   0x000f39       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ANSELBbits   0x000f39       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ANSELCbits   0x000f3a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ANSELC   0x000f3a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 PMD2bits   0x000f3d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PMD2   0x000f3d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 PMD2bits   0x000f3d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PMD1bits   0x000f3e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PMD1   0x000f3e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PMD0bits   0x000f3f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PMD0   0x000f3f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             VREFCON2bits   0x000f40       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 VREFCON2   0x000f40       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   DACCON1   0x000f40       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               DACCON1bits   0x000f40       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 VREFCON2   0x000f40       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             VREFCON2bits   0x000f40       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   DACCON0   0x000f41       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               DACCON0bits   0x000f41       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              VREFCON1bits   0x000f41       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  VREFCON1   0x000f41       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               FVRCONbits   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   FVRCON   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  VREFCON0   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              VREFCON0bits   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   FVRCON   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               FVRCONbits   0x000f42       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              CTMUICONbits   0x000f43       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
             CTMUICONHbits   0x000f43       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 CTMUICONH   0x000f43       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  CTMUICON   0x000f43       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             CTMUCONLbits   0x000f44       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  CTMUCON1   0x000f44       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              CTMUCON1bits   0x000f44       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             CTMUCONLbits   0x000f44       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  CTMUCONL   0x000f44       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              CTMUCONHbits   0x000f45       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  CTMUCONH   0x000f45       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 CTMUCON0   0x000f45       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              CTMUCON0bits   0x000f45       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               SRCON1bits   0x000f46       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 CTMUCON0   0x000f45       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SRCON1   0x000f46       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               SRCON1bits   0x000f46       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SRCON0bits   0x000f47       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SRCON0   0x000f47       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              CCPTMRS1bits   0x000f48       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  CCPTMRS1   0x000f48       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 CCPTMRS0   0x000f49       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              CCPTMRS0bits   0x000f49       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 CCPTMRS0   0x000f49       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 T6CONbits   0x000f4a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     T6CON   0x000f4a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                       PR6   0x000f4b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1035,49 +915,49 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                    CCPR5H   0x000f56       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   CCP4CON   0x000f57       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               CCP4CONbits   0x000f57       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   CCPR4L   0x000f58       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     CCPR4   0x000f58       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   CCPR4L   0x000f58       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CCPR4H   0x000f59       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PSTR3CON   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              PSTR3CONbits   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  ECCP3AS   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   CCP3AS   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                CCP3ASbits   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               ECCP3ASbits   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   CCP3AS   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  ECCP3AS   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   PWM3CON   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               PWM3CONbits   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-              CCP3CONbits   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   CCP3CON   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   CCPR3L   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+              CCP3CONbits   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     CCPR3   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   CCPR3L   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CCPR3H   0x000f5f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SLRCON   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SLRCONbits   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  WPUBbits   0x000f61       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      WPUB   0x000f61       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     IOCB   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  IOCBbits   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 PSTR2CON   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     IOCB   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              PSTR2CONbits   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 PSTR2CON   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                CCP2ASbits   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CCP2AS   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               ECCP2ASbits   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   ECCP2AS   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  PWM2CON   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               PWM2CONbits   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-              CCP2CONbits   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  PWM2CON   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   CCP2CON   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    CCPR2   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+              CCP2CONbits   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CCPR2L   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    CCPR2   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CCPR2H   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             SSP2CON3bits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  SSP2CON3   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             SSP2CON3bits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SSP2MSK   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSP2MSKbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              SSP2CON2bits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  SSP2CON2   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  SSP2CON1   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  SSP2STAT   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              SSP2STATbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SSP2ADD   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1086,44 +966,44 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
              BAUD2CONbits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  BAUDCON2   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              BAUDCON2bits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   RCSTA2   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    RC2STA   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                RC2STAbits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   RCSTA2   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                RCSTA2bits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               TX2STAbits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   TX2STA   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   TXSTA2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                TXSTA2bits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   TXREG2   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   TXSTA2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   TX2STA   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               TX2STAbits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    TX2REG   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   RCREG2   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   TXREG2   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    RC2REG   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   SP2BRG   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   RCREG2   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SPBRG2   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  SP2BRGH   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   SP2BRG   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SPBRGH2   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  SP2BRGH   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   CM12CON   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               CM12CONbits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  CM2CON1   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               CM2CON1bits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  CM2CON1   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               CM2CONbits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               CM2CON0bits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   CM2CON0   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CM2CON   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               CM2CONbits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                CM1CONbits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               CM1CON0bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   CM1CON0   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CM1CON   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIE4   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIE4bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 PIR4bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIR4   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     IPR4   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 PIR4bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  IPR4bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     IPR4   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIE5   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIE5bits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     PIR5   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIR5bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     PIR5   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      IPR5   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  IPR5bits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1132,108 +1012,108 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                 PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TRISE   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 TRISEbits   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               LVDCONbits   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   LVDCON   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   HLVDCON   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               HLVDCONbits   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   LVDCON   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               LVDCONbits   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     PIE3   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIE3bits   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     PIR3   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PIR3bits   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 IPR3bits   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      IPR3   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                EEADRbits   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   RCSTA1   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               RCSTA1bits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                EEADRbits   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               RC1STAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               RCSTA1bits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   RCSTA1   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    RC1STA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               TX1STAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               RC1STAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    TX1STA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               TXSTA1bits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               TX1STAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               TXSTA1bits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    TXSTA1   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               TX1REGbits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    TX1REG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               TX1REGbits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 TXREGbits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                TXREG1bits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    TXREG1   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   RCREG1   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               RCREG1bits   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   RC1REG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 RCREGbits   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   RC1REG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               RCREG1bits   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   RCREG1   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                RC1REGbits   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   SPBRG1   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               SP1BRGbits   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SPBRG1bits   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                SPBRGbits   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   SPBRG1   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               SP1BRGbits   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SP1BRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  SP1BRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-              SP1BRGHbits   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                SPBRGbits   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SPBRGH1   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+              SP1BRGHbits   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  SP1BRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SPBRGH1bits   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SPBRGHbits   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               T3GCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    T3GCON   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               ECCPASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   ECCPAS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               T3GCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               ECCPASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   ECCPAS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   PWM1CON   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               PWM1CONbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   PWMCON   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                PWMCONbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   PWMCON   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1244,56 +1124,56 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                  BAUD1CON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                  PSTR1CON   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              PSTR1CONbits   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  PSTRCON   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               PSTRCONbits   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  PSTRCON   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 T2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     T2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                       PR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      TMR2   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 SSP1CON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 SSP1CON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 SSP1STAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
              SSP1STATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  SSP1ADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-              SSP1ADDbits   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SSPADDbits   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+              SSP1ADDbits   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSP1BUFbits   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SSP1BUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                SSPBUFbits   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               SSPMSKbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                  SSP1MSK   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    SSPMSK   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSP1MSKbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 SSP1CON3   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-             SSP1CON3bits   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               SSPMSKbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                  SSP1MSK   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               SSPCON3bits   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   SSPCON3   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   T1GCON   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+             SSP1CON3bits   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 SSP1CON3   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                T1GCONbits   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   T1GCON   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1302,12 +1182,12 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                  RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-              OSCCON2bits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   OSCCON2   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+              OSCCON2bits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                 T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1321,8 +1201,8 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                  POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                       BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1331,8 +1211,8 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                     INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                         W   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1349,8 +1229,8 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                      PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                     PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                   TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
               TBLPTRUbits   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -1358,8 +1238,8 @@ Linker Map File - Created Mon Feb 23 15:36:28 2015
                       PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                       TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                      TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm

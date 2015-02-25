@@ -1,0 +1,15 @@
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 218 : suspicious pointer conversion
+Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 218 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 219 : suspicious pointer conversion
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 265 : suspicious pointer conversion
+Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 265 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 266 : suspicious pointer conversion
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 284 : suspicious pointer conversion
+Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 284 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 285 : suspicious pointer conversion
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 299 : suspicious pointer conversion
+Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 299 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 300 : suspicious pointer conversion
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 315 : suspicious pointer conversion
+Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 315 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c 316 : suspicious pointer conversion

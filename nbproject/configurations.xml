@@ -6,6 +6,8 @@
                    projectFiles="true">
       <itemPath>uC_main.h</itemPath>
       <itemPath>hsuprot.h</itemPath>
+      <itemPath>functions.h</itemPath>
+      <itemPath>global_def.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,6 +18,9 @@
                    projectFiles="true">
       <itemPath>uC_main.c</itemPath>
       <itemPath>hsuprot.c</itemPath>
+      <itemPath>uC_interrupt.c</itemPath>
+      <itemPath>uC_init.c</itemPath>
+      <itemPath>uC_functions.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -136,6 +141,26 @@
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="5.0"/>
       </PICkit3PlatformTool>
+      <item path="uC_init.c" ex="false" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+      <item path="uC_interrupt.c" ex="false" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>
