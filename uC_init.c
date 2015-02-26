@@ -61,7 +61,7 @@ void __init()
     InitCCP();
 
     InitWT12();
-
+    //InitBluetooth();
     //kurz warten damit IMU immer erfolgreich initiiert wird!
     InitMPU6000();
     Delay1KTCYx(100);
@@ -154,8 +154,8 @@ void InitCCP(void)
             ADC_12_TAD      ,	// Acquisition Time 12 Tad
             ADC_CH0         &  	// Channal 0 für AD Wandlung
             ADC_INT_ON      &	// Interrupt enabled
-            ADC_REF_VDD_VSS ,    	// Referenz = Betriebsspannung 0 bis 3,3V;
-            ADC_TRIG_CCP5         // Trigger
+            ADC_REF_VDD_VSS ,   // Referenz = Betriebsspannung 0 bis 3,3V;
+            ADC_TRIG_CCP5       // Trigger
             );              //Port configuration (all digital)
 
       OpenTimer1(  TIMER_INT_OFF &
@@ -170,7 +170,8 @@ void InitCCP(void)
 //T1CONbits.TMR1ON = 1;
 
 CCPTMRS1bits.C5TSEL = 0; // timer <-> ccp module (CCP5 / TMR1)
-CCPR5 = (unsigned int)(FOSC_/4/8/SAMPRATE);; // Fosc/4 / prescaler / samprate
+CCPR5L = 100; // Fosc/4 / prescaler / samprate
+CCPR5H = 100/256;
 CCP5CONbits.CCP5M = 0b1011; // Compare Mode with Special Event Trigger
 }
 
@@ -194,8 +195,8 @@ void InitBluetooth(void)
 // ----------------------------------------------------------------------------
 void InitWT12(void)
 {
-    spbrg = 16;
-    //spbrg = 34;
+    //spbrg = 16;
+    spbrg = 34;
     rx_count = 0;
     //connected = 0;
 
@@ -258,7 +259,19 @@ void InitWT12(void)
 
     Delay1KTCYx(100);
 */
+    //setze neuen Namen
+    strcpypgm2ram(tx_buffer, "SET BT NAME Somno3");
+    buff_len = strlen(tx_buffer);
+    tx_buffer[buff_len++] = '\r';
+    tx_buffer[buff_len++] = '\n';
 
+
+    // send command via USART
+    for(i = 0; i < buff_len; i++)
+    {
+       TXREG1 = tx_buffer[i];
+       while(!TXSTA1bits.TRMT1);
+    }
 
     // setze den PIN CODE auf 1234
     strcpypgm2ram(tx_buffer, "SET BT AUTH * 1234");

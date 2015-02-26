@@ -40,7 +40,8 @@ void interrupt_HIGH (void){
     //AD-Wandler fertig
     if(PIE1bits.ADIE && PIR1bits.ADIF)
     {
-        statusData.newValues=1;
+        if (mode == 1 && WT12_CON)
+        GetData();        
         PIR1bits.ADIF = 0;
     }
 

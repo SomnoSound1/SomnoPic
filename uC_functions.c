@@ -16,19 +16,21 @@
 
 
 char Testbyte = 3;
-unsigned char Manuf, Dev1, Dev2, status;
+unsigned char Manuf, Dev1, Dev2, status, IMUidx;
 int batt_voltage;
 char POWER_OK;
 
 
 void GetData()
-{
+{    
     ReadSensorData();
     //ReadSensorDataTest();
     if(dataBuffer.idx == MAX_AUDIO || dataBuffer.idx >=(MAX_AUDIO+MAX_DATA))
-    {
+    {        
         //ReadIMUDataTest();
-        ReadIMUData();
+        //Platz für IMU Daten lassen
+        dataBuffer.idx += 12;
+        statusData.newValues = 1;       
     }
     if(dataBuffer.idx == MAX_DATA){
         if(statusData.newData)
@@ -40,9 +42,7 @@ void GetData()
             statusData.dataOVF = 1;
         dataBuffer.idx = 0;
         statusData.newData = 1;
-    }
-
-    //TESTPIN = 0;    
+    }  
 }
 
 void ReadSensorData(void)
@@ -78,13 +78,20 @@ void ReadIMUDataTest(void)
 
 void ReadIMUData(void)
 {
+
+    if (dataBuffer.idx < MAX_DATA)
+        IMUidx = 92;
+    else
+        IMUidx = 40;
+
+    //TESTPIN = !TESTPIN;
     // Beschleunigungssensor lesen: X-Achse
     // ACCEL_XOUT_H 0x3B + 0x80(read) = 0xBB
     CS_SPI1 = 0; //CS_SPI1 = 0 -> chip enabled;
     Delay10TCYx(1);
     WriteSPI1(0xBB);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
     // ACCEL_XOUT_L 0x3C + 0x80(read) = 0xBC
@@ -92,7 +99,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xBC);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
 
@@ -102,7 +109,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xBD);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
     // ACCEL_YOUT_L 0x3E + 0x80(read) = 0xBE
@@ -110,7 +117,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xBE);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
 
@@ -120,7 +127,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xBF);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
     // ACCEL_ZOUT_L 0x40 + 0x80(read) = 0xC0
@@ -128,7 +135,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC0);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
 
@@ -138,7 +145,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC3);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
     // GYRO_XOUT_L 0x44 + 0x80(read) = 0xC4
@@ -146,7 +153,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC4);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
 
@@ -156,7 +163,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC5);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
     // GYRO_YOUT_L 0x46 + 0x80(read) = 0xC6
@@ -164,7 +171,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC6);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
 
@@ -174,7 +181,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC7);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
     // GYRO_ZOUT_L 0x48 + 0x80(read) = 0xC8
@@ -182,7 +189,7 @@ void ReadIMUData(void)
     Delay10TCYx(1);
     WriteSPI1(0xC8);
     while(!DataRdySPI1());
-    dataBuffer.bytes[dataBuffer.idx++] = ReadSPI1();
+    dataBuffer.bytes[IMUidx++] = ReadSPI1();
     CS_SPI1 = 1;
     Delay10TCYx(1);
 
@@ -203,6 +210,7 @@ void ReadIMUData(void)
 //    *(buffer) = ReadSPI1();
 //    CS_SPI1 = 1;
 //    Delay10TCYx(1);
+//    TESTPIN = !TESTPIN;
 }
 // ----------------------------------------------------------------------------
 void TransmitDataViaBT(void)

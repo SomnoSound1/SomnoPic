@@ -76,14 +76,10 @@ void main()
         
         while(mode == 1 && WT12_CON)
         {
-            //Collect Data
-            if(statusData.newValues){
-                statusData.newValues = 0;
-                GetData();
-            }
-
             //Send Data
             if(statusData.newData){
+                //TESTPIN = !TESTPIN;
+                ReadIMUData();
                 TransmitDataViaBT();
             }
         }
