@@ -145,43 +145,39 @@ void RXbyteImport(char newByte)
 /////////////////////////////////////////////////////////////////////////
 void SendPck(struct serialPck sendPck)
 {
-//	overlay
     unsigned char j;
 
     while(!TXSTA1bits.TRMT1);
-    TXREG1 = STARTFLAG;                      // STARTFLAG
+    TXREG1 = STARTFLAG; // STARTFLAG
     while(!TXSTA1bits.TRMT1);
-    TXREG1 = sendPck.ID.all;                // ID (must not be a FLAG !!!)
-    while(!TXSTA1bits.TRMT1);
-    TXREG1 = PCK_SIZE+4; //+START +ID +SIZE +STOP
-    //sendPck->ChkSum = sendPck->ID.all;
-
-    for (j=0; j<sendPck.Size; j++)
-    {
-//        if ((sendPck->Bytes[j]==STARTFLAG)  // check the bytes for flags
-//           ||(sendPck->Bytes[j]==STOPFLAG)  //   if a flag -> send the ESCAPE
-//           ||(sendPck->Bytes[j]==ESCFLAG))  //   and mask the byte
-//        {                                   //   then transmit it
-//            while(!TXSTA1bits.TRMT1);
-//            TXREG1 = ESCFLAG;
-//            sendPck->Bytes[j] &= ~ESCMASK;
-//        }
+    TXREG1 = sendPck->ID.all; // ID (must not be a FLAG !!!)
+    sendPck->ChkSum = sendPck->ID.all;
+    for (j = 0; j < sendPck->Size - 1; j++) {
+        if ((sendPck->Bytes[j] == STARTFLAG) // check the bytes for flags
+                || (sendPck->Bytes[j] == STOPFLAG) //   if a flag -> send the ESCAPE
+                || (sendPck->Bytes[j] == ESCFLAG)) //   and mask the byte
+        { //   then transmit it
+            while(!TXSTA1bits.TRMT1);
+            TXREG1 = ESCFLAG;
+            sendPck->Bytes[j] &= ~ESCMASK;
+        }
         while(!TXSTA1bits.TRMT1);
-        TXREG1 = sendPck.Bytes[j];
-        //sendPck->ChkSum += sendPck->Bytes[j];
+        TXREG1 = sendPck->Bytes[j];
+        sendPck->ChkSum += sendPck->Bytes[j];
     }
-//    if ((sendPck->ChkSum==STARTFLAG)        // check the checksum for flags
-//      ||(sendPck->ChkSum==STOPFLAG)         //   if a flag -> send the ESCAPE
-//      ||(sendPck->ChkSum==ESCFLAG))         //   mask the checksum
-//    {                                       //   then transmit it
-//        while(!TXSTA1bits.TRMT1);
-//        TXREG1 = ESCFLAG;
-//        sendPck->ChkSum &= ~ESCMASK;
-//    }
-
+    if ((sendPck->ChkSum == STARTFLAG) // check the checksum for flags
+            || (sendPck->ChkSum == STOPFLAG) //   if a flag -> send the ESCAPE
+            || (sendPck->ChkSum == ESCFLAG)) //   mask the checksum
+    { //   then transmit it
+        while(!TXSTA1bits.TRMT1);
+        TXREG1 = ESCFLAG;
+        sendPck->ChkSum &= ~ESCMASK;
+    }
     while(!TXSTA1bits.TRMT1);
-    TXREG1 = STOPFLAG;                       // STOPTFLAG
-    sendPck.Flags.CMDTODO = 0;
+    TXREG1 = sendPck->ChkSum;
+    while(!TXSTA1bits.TRMT1);
+    TXREG1 = STOPFLAG; // STOPTFLAG
+    sendPck->Flags.CMDTODO = 0;
 }
 
 

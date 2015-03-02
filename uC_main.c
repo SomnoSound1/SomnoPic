@@ -78,8 +78,10 @@ void main()
         {
             //Send Data
             if(statusData.newData){
-                //TESTPIN = !TESTPIN;
+                //TESTPIN = !TESTPIN;                
                 ReadIMUData();
+                AddPackageNumber();
+                //ReadIMUDataTest();
                 TransmitDataViaBT();
             }
         }

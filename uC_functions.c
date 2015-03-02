@@ -14,12 +14,14 @@
 
 #pragma udata // let linker place variables (banked RAM)
 
+#define LOWBYTE(v)   ((unsigned char) (v))
+#define HIGHBYTE(v)  ((unsigned char) (((unsigned int) (v)) >> 8))
 
 char Testbyte = 3;
 unsigned char Manuf, Dev1, Dev2, status, IMUidx;
 int batt_voltage;
+unsigned short package_number = 0;
 char POWER_OK;
-
 
 void GetData()
 {    
@@ -29,7 +31,7 @@ void GetData()
     {        
         //ReadIMUDataTest();
         //Platz für IMU Daten lassen
-        dataBuffer.idx += 12;
+        dataBuffer.idx += 14;
         statusData.newValues = 1;       
     }
     if(dataBuffer.idx == MAX_DATA){
@@ -76,11 +78,18 @@ void ReadIMUDataTest(void)
     Testbyte=0;
 }
 
+void AddPackageNumber(void)
+{
+    dataBuffer.bytes[IMUidx++] = LOWBYTE(package_number);
+    dataBuffer.bytes[IMUidx++] = HIGHBYTE(package_number);
+    package_number++;
+}
+
 void ReadIMUData(void)
 {
 
     if (dataBuffer.idx < MAX_DATA)
-        IMUidx = 92;
+        IMUidx = 94;
     else
         IMUidx = 40;
 
@@ -216,7 +225,6 @@ void ReadIMUData(void)
 void TransmitDataViaBT(void)
 {
     statusData.newData = 0;
-
     while(!TXSTA1bits.TRMT1);
     TXREG1 = STARTFLAG;                      // STARTFLAG
     while(!TXSTA1bits.TRMT1);
@@ -244,6 +252,26 @@ void TransmitDataViaBT(void)
          TXREG1 = STOPFLAG;
     }
 }
+
+//void TransmitDataViaBT(void)
+//{
+//    unsigned char j;
+//    struct serialPck sendPck;
+//
+//    if (dataBuffer.idx < MAX_DATA){
+//    for(i = 0;i<MAX_DATA;i++)
+//    sendPck.Bytes[i] = dataBuffer.bytes[i + MAX_DATA];}
+//    else{
+//    for(i = 0;i<MAX_DATA;i++)
+//    sendPck.Bytes[i] = dataBuffer.bytes[i];}
+//
+//
+//    sendPck.ID.SIZE = 0;
+//    sendPck.ID.MESSAGE = 0;
+//    statusData.newData = 0;
+//
+//    SendPck(sendPck);
+//}
 
 void SendMessage(char message)
 {

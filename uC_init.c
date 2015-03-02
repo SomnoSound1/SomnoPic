@@ -260,7 +260,7 @@ void InitWT12(void)
     Delay1KTCYx(100);
 */
     //setze neuen Namen
-    strcpypgm2ram(tx_buffer, "SET BT NAME Somno3");
+    strcpypgm2ram(tx_buffer, "SET BT NAME Somno2");
     buff_len = strlen(tx_buffer);
     tx_buffer[buff_len++] = '\r';
     tx_buffer[buff_len++] = '\n';

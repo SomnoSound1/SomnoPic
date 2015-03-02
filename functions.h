@@ -21,6 +21,7 @@ void InitADC(void);
 void InitADC0(void);
 void InitCCP(void);
 
+void AddPackageNumber(void);
 void GetData(void);
 void CloseAll(void);
 void SendMessage(char message);

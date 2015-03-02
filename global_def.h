@@ -20,6 +20,7 @@
 
 
 // G L O B A L E   P R O T O T Y P E N  ////////////////////////////////////////
+//extern int package_number;
 extern char mode;
 extern union u_status statusData;     // (siehe oben)
 extern unsigned char TM0_LowByte, TM1_LowByte;
