@@ -63,9 +63,9 @@ void interrupt_HIGH (void){
             //OPEN
             if(inPck.Bytes[0] == 0x03 );{
             mode = 1;}
-            //INIT
+            //INIT Message für Sensor Identifikation
             if(inPck.Bytes[0] == 0x00);{
-            SendMessage(5);}
+            SendMessage(1);}
             //DEVICE
             if(inPck.Bytes[0] == 0x0F);{
             SendMessage(strDevice);

@@ -259,8 +259,24 @@ void InitWT12(void)
 
     Delay1KTCYx(100);
 */
+    //setze BT Power
+//    strcpypgm2ram(tx_buffer, "SET BT POWER 0 20 0");
+//    buff_len = strlen(tx_buffer);
+//    tx_buffer[buff_len++] = '\r';
+//    tx_buffer[buff_len++] = '\n';
+//
+//
+//    // send command via USART
+//    for(i = 0; i < buff_len; i++)
+//    {
+//       TXREG1 = tx_buffer[i];
+//       while(!TXSTA1bits.TRMT1);
+//    }
+//
+//    Delay1KTCYx(100);
+
     //setze neuen Namen
-    strcpypgm2ram(tx_buffer, "SET BT NAME Somno2");
+    strcpypgm2ram(tx_buffer, "SET BT NAME Somno1");
     buff_len = strlen(tx_buffer);
     tx_buffer[buff_len++] = '\r';
     tx_buffer[buff_len++] = '\n';
@@ -272,6 +288,8 @@ void InitWT12(void)
        TXREG1 = tx_buffer[i];
        while(!TXSTA1bits.TRMT1);
     }
+
+    Delay1KTCYx(100);
 
     // setze den PIN CODE auf 1234
     strcpypgm2ram(tx_buffer, "SET BT AUTH * 1234");
