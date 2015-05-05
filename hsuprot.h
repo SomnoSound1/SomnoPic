@@ -12,7 +12,7 @@
 
 //## D E F I N I T I O N S #####################################################
 
-#define PCK_SIZE	54	// ->global_def.h
+#define PCK_SIZE	55	// ->global_def.h
 
 /*
 //## Pins (if USART not used) define them in "global_def.h"

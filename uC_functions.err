@@ -1,4 +1,4 @@
-Warning[2063] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 231 : '.' operator expected, not '->'
-Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 309 : suspicious pointer conversion
-Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 309 : type qualifier mismatch in assignment
-Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 310 : suspicious pointer conversion
+Warning[2063] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 242 : '.' operator expected, not '->'
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 320 : suspicious pointer conversion
+Warning[2066] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 320 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c 321 : suspicious pointer conversion

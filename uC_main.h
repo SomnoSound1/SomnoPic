@@ -11,7 +11,7 @@
 #define LED_BLAU    PORTCbits.RC0
 #define LED_ROT     PORTAbits.RA4
 
-#define MAX_DATA        54
+#define MAX_DATA        55
 #define MAX_AUDIO       40
 #define MAX_RX_BUFFER   10
 #define STANDBY_TIMEOUT 2000

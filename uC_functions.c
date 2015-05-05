@@ -31,7 +31,7 @@ void GetData()
     {        
         //ReadIMUDataTest();
         //Platz für IMU Daten lassen
-        dataBuffer.idx += 14;
+        dataBuffer.idx += 15;
         statusData.newValues = 1;       
     }
     if(dataBuffer.idx == MAX_DATA){
@@ -91,16 +91,16 @@ void AddSyncTrigger(void)
     if(triggerTimer >= 250)
     {
         triggerTimer=0;
-        TESTPIN = !TESTPIN;
-        dataBuffer.bytes[IMUidx++] = TESTPIN;
+        TESTPIN = !TESTPIN;        
     }
+    dataBuffer.bytes[IMUidx++] = TESTPIN;
 }
 
 void ReadIMUData(void)
 {
 
     if (dataBuffer.idx < MAX_DATA)
-        IMUidx = 94;
+        IMUidx = 95;
     else
         IMUidx = 40;
 
