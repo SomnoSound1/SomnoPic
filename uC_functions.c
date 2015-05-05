@@ -19,7 +19,7 @@
 
 char Testbyte = 3;
 unsigned char Manuf, Dev1, Dev2, status, IMUidx;
-int batt_voltage;
+int batt_voltage, triggerTimer;
 unsigned short package_number = 0;
 char POWER_OK;
 
@@ -83,6 +83,17 @@ void AddPackageNumber(void)
     dataBuffer.bytes[IMUidx++] = LOWBYTE(package_number);
     dataBuffer.bytes[IMUidx++] = HIGHBYTE(package_number);
     package_number++;
+}
+
+void AddSyncTrigger(void)
+{
+    triggerTimer++;
+    if(triggerTimer >= 250)
+    {
+        triggerTimer=0;
+        TESTPIN = !TESTPIN;
+        dataBuffer.bytes[IMUidx++] = TESTPIN;
+    }
 }
 
 void ReadIMUData(void)

@@ -81,6 +81,7 @@ void main()
                 //TESTPIN = !TESTPIN;                
                 ReadIMUData();
                 AddPackageNumber();
+                AddSyncTrigger();
                 //ReadIMUDataTest();
                 TransmitDataViaBT();
             }
