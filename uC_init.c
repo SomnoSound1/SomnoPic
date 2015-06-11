@@ -170,8 +170,8 @@ void InitCCP(void)
 //T1CONbits.TMR1ON = 1;
 
 CCPTMRS1bits.C5TSEL = 0; // timer <-> ccp module (CCP5 / TMR1)
-CCPR5L = 100; // Fosc/4 / prescaler / samprate
-CCPR5H = 100/256;
+CCPR5L = 10000; // Fosc/4 / prescaler / samprate
+CCPR5H = 10000/256;
 CCP5CONbits.CCP5M = 0b1011; // Compare Mode with Special Event Trigger
 }
 

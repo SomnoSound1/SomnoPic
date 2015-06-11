@@ -1,5 +1,5 @@
 MPLINK 4.40, Linker
-Linker Map File - Created Fri Apr 24 16:07:50 2015
+Linker Map File - Created Tue Jun 02 10:30:59 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -42,30 +42,30 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
    HIGH_INTERRUPTS_VECTOR       code   0x000008    program   0x00007e
                    .cinit    romdata   0x000086    program   0x00000e
      .code_uC_functions.o       code   0x000094    program   0x0007ce
-          .code_uC_init.o       code   0x000862    program   0x000650
-          .code_hsuprot.o       code   0x000eb2    program   0x000496
-               _cinit_scn       code   0x001348    program   0x00009e
-           .code_u1open.o       code   0x0013e6    program   0x000072
-             .stringtable    romdata   0x001458    program   0x000066
-          .code_adcopen.o       code   0x0014be    program   0x000060
-           .code_t1open.o       code   0x00151e    program   0x000054
-                   STRING       code   0x001572    program   0x00004e
-         .code_spi1open.o       code   0x0015c0    program   0x00004c
-          .code_uC_main.o       code   0x00160c    program   0x00004a
-         .code_spi1writ.o       code   0x001656    program   0x00003c
-           .code_t0open.o       code   0x001692    program   0x000038
-  .romdata_uC_interrupt.o    romdata   0x0016ca    program   0x000034
-             D10KTCYXCODE       code   0x0016fe    program   0x00002e
-         .code_spi1read.o       code   0x00172c    program   0x00002e
-              D1KTCYXCODE       code   0x00175a    program   0x000020
-                    .code       code   0x00177a    program   0x000020
-             _startup_scn       code   0x00179a    program   0x00001c
-              D10TCYXCODE       code   0x0017b6    program   0x000016
-          .code_adcread.o       code   0x0017cc    program   0x000012
-          .code_adcbusy.o       code   0x0017de    program   0x00000a
-         .code_adcclose.o       code   0x0017e8    program   0x000006
-          .code_adcconv.o       code   0x0017ee    program   0x000004
-  .idata_uC_functions.o_i    romdata   0x0017f2    program   0x000003
+          .code_uC_init.o       code   0x000862    program   0x000652
+          .code_hsuprot.o       code   0x000eb4    program   0x000496
+               _cinit_scn       code   0x00134a    program   0x00009e
+           .code_u1open.o       code   0x0013e8    program   0x000072
+             .stringtable    romdata   0x00145a    program   0x000066
+          .code_adcopen.o       code   0x0014c0    program   0x000060
+           .code_t1open.o       code   0x001520    program   0x000054
+                   STRING       code   0x001574    program   0x00004e
+         .code_spi1open.o       code   0x0015c2    program   0x00004c
+          .code_uC_main.o       code   0x00160e    program   0x00004a
+         .code_spi1writ.o       code   0x001658    program   0x00003c
+           .code_t0open.o       code   0x001694    program   0x000038
+  .romdata_uC_interrupt.o    romdata   0x0016cc    program   0x000034
+             D10KTCYXCODE       code   0x001700    program   0x00002e
+         .code_spi1read.o       code   0x00172e    program   0x00002e
+              D1KTCYXCODE       code   0x00175c    program   0x000020
+                    .code       code   0x00177c    program   0x000020
+             _startup_scn       code   0x00179c    program   0x00001c
+              D10TCYXCODE       code   0x0017b8    program   0x000016
+          .code_adcread.o       code   0x0017ce    program   0x000012
+          .code_adcbusy.o       code   0x0017e0    program   0x00000a
+         .code_adcclose.o       code   0x0017ea    program   0x000006
+          .code_adcconv.o       code   0x0017f0    program   0x000004
+  .idata_uC_functions.o_i    romdata   0x0017f4    program   0x000003
  .config_300001_uC_main.o    romdata   0x300001    program   0x000001
  .config_300002_uC_main.o    romdata   0x300002    program   0x000001
  .config_300003_uC_main.o    romdata   0x300003    program   0x000001
@@ -120,10 +120,10 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000005      
-                            0x000008    0x0017f4      
+                            0x000008    0x0017f6      
                             0x300001    0x300003      
                             0x300005    0x300006      
-            6136 out of 16664 program addresses used, program memory utilization is 36%
+            6138 out of 16664 program addresses used, program memory utilization is 36%
 
 
 
@@ -131,58 +131,58 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
          AddPackageNumber   0x00021e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-                  BusyADC   0x0017de    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
-                 CloseADC   0x0017e8    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
+                  BusyADC   0x0017e0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
+                 CloseADC   0x0017ea    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
                  CloseAll   0x00070c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-               ConvertADC   0x0017ee    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
-                   D10K_1   0x00170a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001716    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001708    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x0017c6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                     D10x   0x0017be    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x001766    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x001764    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-             Delay10KTCYx   0x0016fe    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x0017b6    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x00175a    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+               ConvertADC   0x0017f0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
+                   D10K_1   0x00170c    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001718    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00170a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x0017c8    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0017c0    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x001768    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x001766    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x001700    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x0017b8    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x00175c    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
                   GetData   0x000094    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
                 GoToSleep   0x000638    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
           GoToSleepSensor   0x0006de    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
             GoToSleepWT12   0x000648    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-              HSUprotInit   0x000eb2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+              HSUprotInit   0x000eb4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
                   InitADC   0x000728    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
                  InitADC0   0x00091a    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-            InitBluetooth   0x00096e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+            InitBluetooth   0x000970    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
                   InitCCP   0x000932    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
            InitInterrupts   0x0008b8    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-              InitMPU6000   0x000d3e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+              InitMPU6000   0x000d40    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
                InitTimer0   0x0008ce    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
                InitTimer1   0x0008f2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-                 InitWT12   0x00098e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-                  MakePck   0x001130    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
-               Open1USART   0x0013e6    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
-                  OpenADC   0x0014be    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
-                 OpenSPI1   0x0015c0    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
-               OpenTimer0   0x001692    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
-               OpenTimer1   0x00151e    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
-             RXbyteImport   0x000ebc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
-                  ReadADC   0x0017cc    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
+                 InitWT12   0x000990    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                  MakePck   0x001132    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+               Open1USART   0x0013e8    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
+                  OpenADC   0x0014c0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
+                 OpenSPI1   0x0015c2    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
+               OpenTimer0   0x001694    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
+               OpenTimer1   0x001520    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
+             RXbyteImport   0x000ebe    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  ReadADC   0x0017ce    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
               ReadIMUData   0x00024e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
           ReadIMUDataTest   0x000124    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-                 ReadSPI1   0x00172c    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
+                 ReadSPI1   0x00172e    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
            ReadSensorData   0x0000d4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
        ReadSensorDataTest   0x0000fc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
               SendMessage   0x0005fa    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-                  SendPck   0x000ff2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  SendPck   0x000ff4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
         TransmitDataViaBT   0x00057c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-                WriteSPI1   0x001656    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
-       _D10KTCYXCODE_0010   0x00170e    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x00171a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x0017c0    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0017c2    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0017c4    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x00176a    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x001770    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                WriteSPI1   0x001658    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
+       _D10KTCYXCODE_0010   0x001710    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00171c    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x0017c2    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0017c4    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0017c6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x00176c    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x001772    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
            ___if_lbl00003   0x000024    program     static                          
            ___if_lbl00004   0x000026    program     static                          
            ___if_lbl00007   0x00005a    program     static                          
@@ -192,8 +192,8 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
            ___if_lbl00011   0x000082    program     static                          
        ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00000   0x000084    program     static                          
-       ___return_lbl00001   0x0017b4    program     static                          
-       ___return_lbl00002   0x0013e4    program     static                          
+       ___return_lbl00001   0x0017b6    program     static                          
+       ___return_lbl00002   0x0013e6    program     static                          
        ___return_lbl00073   0x000646    program     static                          
         ___while_lbl00074   0x00063e    program     static                          
         ___while_lbl00075   0x000642    program     static                          
@@ -203,13 +203,13 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
                __config_3   0x300005    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
                __config_4   0x300006    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
                    __init   0x000862    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_0   0x0014b1    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_0   0x0014b4    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-               __string_1   0x00149e    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_2   0x00148b    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_3   0x001478    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_4   0x00145c    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_5   0x001458    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0014b3    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0014b6    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+               __string_1   0x0014a0    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_2   0x00148d    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_3   0x00147a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_4   0x00145e    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_5   0x00145a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
                __tmplbl_0   0x000014    program     static                          
                __tmplbl_1   0x00000e    program     static                          
                __tmplbl_2   0x000020    program     static                          
@@ -218,33 +218,33 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
                __tmplbl_5   0x00002c    program     static                          
                __tmplbl_6   0x000052    program     static                          
                __tmplbl_7   0x000048    program     static                          
-            __zero_memory   0x00177a    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                _do_cinit   0x001348    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+            __zero_memory   0x00177c    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                _do_cinit   0x00134a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                 _startup   0x00179a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                compare_l   0x001790    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                copy_loop   0x0013ba    program     static                          
-            copy_one_byte   0x0013c0    program     static                          
-                     done   0x0013e4    program     static                          
-             done_copying   0x0013ce    program     static                          
+                 _startup   0x00179c    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                compare_l   0x001792    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                copy_loop   0x0013bc    program     static                          
+            copy_one_byte   0x0013c2    program     static                          
+                     done   0x0013e6    program     static                          
+             done_copying   0x0013d0    program     static                          
            interrupt_HIGH   0x000008    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                     jEnd   0x0015be    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     jEnd   0x0015a2    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                    jLoop   0x001598    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                    jLoop   0x0015b4    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     loop   0x0017aa    program     static                          
-                   loop_h   0x001788    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   loop_l   0x001792    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                     main   0x00160c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
-                  strDate   0x0016e1    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                strDevice   0x0016ca    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                  strManu   0x0016f4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                  strMisc   0x0016fb    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-               strVersion   0x0016d5    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-            strcpypgm2ram   0x001572    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                   strlen   0x0015a4    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     test   0x001362    program     static                          
-               zero_block   0x001788    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     jEnd   0x0015c0    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     jEnd   0x0015a4    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                    jLoop   0x00159a    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                    jLoop   0x0015b6    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     loop   0x0017ac    program     static                          
+                   loop_h   0x00178a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   loop_l   0x001794    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                     main   0x00160e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                  strDate   0x0016e3    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                strDevice   0x0016cc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strManu   0x0016f6    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strMisc   0x0016fd    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+               strVersion   0x0016d7    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+            strcpypgm2ram   0x001574    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                   strlen   0x0015a6    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     test   0x001364    program     static                          
+               zero_block   0x00178a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
@@ -735,75 +735,75 @@ Linker Map File - Created Fri Apr 24 16:07:50 2015
                InitTimer1   0x0008f2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
                  InitADC0   0x00091a    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
                   InitCCP   0x000932    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-            InitBluetooth   0x00096e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-                 InitWT12   0x00098e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-              InitMPU6000   0x000d3e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-              HSUprotInit   0x000eb2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
-             RXbyteImport   0x000ebc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
-                  SendPck   0x000ff2    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
-                  MakePck   0x001130    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
-                _do_cinit   0x001348    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     test   0x001362    program     static                          
-                copy_loop   0x0013ba    program     static                          
-            copy_one_byte   0x0013c0    program     static                          
-             done_copying   0x0013ce    program     static                          
-                     done   0x0013e4    program     static                          
-       ___return_lbl00002   0x0013e4    program     static                          
-               Open1USART   0x0013e6    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
-               __string_5   0x001458    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_4   0x00145c    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_3   0x001478    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_2   0x00148b    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_1   0x00149e    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_0   0x0014b1    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
-               __string_0   0x0014b4    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
-                  OpenADC   0x0014be    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
-               OpenTimer1   0x00151e    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
-            strcpypgm2ram   0x001572    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                    jLoop   0x001598    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                     jEnd   0x0015a2    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                   strlen   0x0015a4    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                    jLoop   0x0015b4    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                     jEnd   0x0015be    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
-                 OpenSPI1   0x0015c0    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
-                     main   0x00160c    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
-                WriteSPI1   0x001656    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
-               OpenTimer0   0x001692    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
-                strDevice   0x0016ca    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-               strVersion   0x0016d5    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                  strDate   0x0016e1    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                  strManu   0x0016f4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-                  strMisc   0x0016fb    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
-             Delay10KTCYx   0x0016fe    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001708    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x00170a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x00170e    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001716    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x00171a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
-                 ReadSPI1   0x00172c    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
-              Delay1KTCYx   0x00175a    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x001764    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x001766    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x00176a    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x001770    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x00177a    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-               zero_block   0x001788    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   loop_h   0x001788    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                compare_l   0x001790    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                   loop_l   0x001792    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
-                 _startup   0x00179a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     loop   0x0017aa    program     static                          
-       ___return_lbl00001   0x0017b4    program     static                          
-              Delay10TCYx   0x0017b6    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                     D10x   0x0017be    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x0017c0    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0017c2    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0017c4    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x0017c6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
-                  ReadADC   0x0017cc    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
-                  BusyADC   0x0017de    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
-                 CloseADC   0x0017e8    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
-               ConvertADC   0x0017ee    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
+            InitBluetooth   0x000970    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+                 InitWT12   0x000990    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+              InitMPU6000   0x000d40    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+              HSUprotInit   0x000eb4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+             RXbyteImport   0x000ebe    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  SendPck   0x000ff4    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                  MakePck   0x001132    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\hsuprot.c
+                _do_cinit   0x00134a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x001364    program     static                          
+                copy_loop   0x0013bc    program     static                          
+            copy_one_byte   0x0013c2    program     static                          
+             done_copying   0x0013d0    program     static                          
+                     done   0x0013e6    program     static                          
+       ___return_lbl00002   0x0013e6    program     static                          
+               Open1USART   0x0013e8    program     extern C:\MCC18\v3_39\src\pmc_common\USART\u1open.c
+               __string_5   0x00145a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_4   0x00145e    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_3   0x00147a    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_2   0x00148d    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_1   0x0014a0    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0014b3    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_init.c
+               __string_0   0x0014b6    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_functions.c
+                  OpenADC   0x0014c0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcopen.c
+               OpenTimer1   0x001520    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t1open.c
+            strcpypgm2ram   0x001574    program     extern C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                    jLoop   0x00159a    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                     jEnd   0x0015a4    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
+                   strlen   0x0015a6    program     extern C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                    jLoop   0x0015b6    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                     jEnd   0x0015c0    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
+                 OpenSPI1   0x0015c2    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1open.c
+                     main   0x00160e    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
+                WriteSPI1   0x001658    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1writ.c
+               OpenTimer0   0x001694    program     extern C:\MCC18\v3_39\src\pmc_common\Timers\t0open.c
+                strDevice   0x0016cc    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+               strVersion   0x0016d7    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strDate   0x0016e3    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strManu   0x0016f6    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+                  strMisc   0x0016fd    program     extern C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_interrupt.c
+             Delay10KTCYx   0x001700    program     extern C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00170a    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x00170c    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x001710    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001718    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00171c    program     static C:\MCC18\v3_39\src\traditional\delays\d10ktcyx.asm
+                 ReadSPI1   0x00172e    program     extern C:\MCC18\v3_39\src\pmc_common\SPI\spi1read.c
+              Delay1KTCYx   0x00175c    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x001766    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x001768    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x00176c    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x001772    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x00177c    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+               zero_block   0x00178a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   loop_h   0x00178a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                compare_l   0x001792    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                   loop_l   0x001794    program     static C:\MCC18\v3_39\src\traditional\proc\p18F24K22.asm
+                 _startup   0x00179c    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x0017ac    program     static                          
+       ___return_lbl00001   0x0017b6    program     static                          
+              Delay10TCYx   0x0017b8    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0017c0    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x0017c2    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0017c4    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0017c6    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x0017c8    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                  ReadADC   0x0017ce    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcread.c
+                  BusyADC   0x0017e0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcbusy.c
+                 CloseADC   0x0017ea    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcclose.c
+               ConvertADC   0x0017f0    program     extern C:\MCC18\v3_39\src\pmc_common\ADC\adcconv.c
                __config_0   0x300001    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
                __config_1   0x300002    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
                __config_2   0x300003    program     static C:\Users\Lizenznehmer\Documents\GitHub\SomnoPic\uC_main.c
